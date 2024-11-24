@@ -52,10 +52,10 @@ export default function Home() {
       <div className="slider">
         <div className="slider-content">
           <LandingSlider
-            imgPath={slides[currentSlide].imgPath}
-            mainText={slides[currentSlide].mainText}
-            secondText={slides[currentSlide].secondText}
-            sales={slides[currentSlide].sales}
+            imgPath={`${slides[currentSlide].imgPath}`}
+            mainText={`${slides[currentSlide].mainText}`}
+            secondText={`${slides[currentSlide].secondText}`}
+            sales={`${slides[currentSlide].sales}`}
           />
         </div>
       </div>
