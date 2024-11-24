@@ -4,6 +4,8 @@
   box-sizing: border-box;
   font-family: 'Comfortaa', sans-serif;
   font-weight: 700;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
 }
 
 .landing-page-container {
