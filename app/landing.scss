@@ -14,6 +14,7 @@
   align-items: center;
   flex-direction: column;
   gap: 20px;
+  height: auto;
   position: relative;
 }
 
@@ -26,6 +27,7 @@
   .slider-content {
     display: flex;
     transition: transform 0.3s ease-in-out;
+    animation: activing 0.5s linear;
   }
 
   .landing-slider {
@@ -35,17 +37,20 @@
     align-items: center;
     text-align: center;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: 0.5s linear;
+    animation: activing 0.5s linear;
   }
 
   .landing-slider.active {
-    opacity: 1;
+    animation: activing 0.5s linear;
   }
+
   .image-container {
     width: 100%;
     height: 100%;
     position: relative;
   }
+
   .slider-image {
     width: 100%;
     height: 100%;
@@ -89,4 +94,48 @@
 
 .indicator.active {
   background-color: #64D370;
+  transition: 0.5s linear;
+  animation: activing 0.5s linear;
+}
+
+@keyframes activing {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.landing-buttons-section {
+  display: flex;
+  width: 100%;
+  height: auto;
+  gap: 40px;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+  button {
+    width: 400px;
+    color: #F5FAFF;
+    font-size: 20px;
+    height: 50px;
+    background-color: #64D370;
+    outline: none;
+    border: none;
+    transition: 0.1s ease-in-out;
+    border-radius: 20px;
+    &:active{
+      transform: scale(0.9);
+    }
+  }
+  button:nth-child(2){
+    background-color: #F5FAFF;
+    color: black;
+  }
 }

@@ -2,7 +2,8 @@
 import React, { useState } from "react";
 import LandingSlider from "./landing-slider";
 import "./landing.scss";
-
+import LandingPageInfo from "./landing-page-info-section"
+import LandingIconItems from "./landing-icon-items/index.jsx"
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -61,7 +62,7 @@ export default function Home() {
       </div>
       <div className="indicators-container">
         <button className="prev-arrow" onClick={prevSlide}>
-          &lt; 
+          &lt;
         </button>
         <div className="indicators">
           {slides.map((_, index) => (
@@ -74,9 +75,19 @@ export default function Home() {
           ))}
         </div>
         <button className="next-arrow" onClick={nextSlide}>
-          &gt; 
+          &gt;
         </button>
       </div>
+      <LandingIconItems />
+      <section className="landing-buttons-section">
+        <button>
+          Программа питания
+        </button>
+        <button>
+          Специальные программы
+        </button>
+      </section>
+      <LandingPageInfo />
     </div>
   );
 }
