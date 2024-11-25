@@ -1,0 +1,35 @@
+.footer-container {
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    .links{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+        @media(max-width: 400px){
+            display: none;
+        }
+    }
+    .logo{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+        h1{
+            font-size: 20px;
+        }
+    }
+    .social{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        div:nth-child(3){
+            display: flex;
+            gap: 10px;
+        }
+    }
+}
