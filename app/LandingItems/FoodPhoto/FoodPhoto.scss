@@ -1,0 +1,82 @@
+
+// .galleryContainer {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     margin: 20px 0;
+//   }
+  
+//   .header {
+//     font-size: 24px;
+//     font-weight: bold;
+//     margin-bottom: 20px;
+//   }
+  
+//   .imageGrid {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+//     gap: 20px;
+//     width: 100%;
+//     max-width: 1200px;
+//   }
+  
+//   .imageWrapper {
+//     overflow: hidden;
+//     border-radius: 10px;
+//     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+//   }
+.galleryContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    overflow-x: scroll;
+    width: 100%;
+  
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  
+    @media (max-width: 768px) {
+      justify-content: flex-start;
+    }
+  }
+  
+  .header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .imageGrid {
+    display: flex;
+    gap: 10px; 
+    padding-bottom: 10px; 
+    max-width: 100%; 
+    white-space: nowrap; 
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    overflow-x: scroll;
+    width: 100%;
+  
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  
+    @media (max-width: 768px) {
+      justify-content: flex-start;
+    }
+  }
+  
+  .imageWrapper {
+    flex: 0 0 auto; 
+    scroll-snap-align: center; 
+    width: 250px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  

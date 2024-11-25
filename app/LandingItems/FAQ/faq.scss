@@ -1,0 +1,194 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 70px;
+    padding: 20px;
+
+    .form {
+        flex: 1;
+        min-width: 300px;
+        max-width: 500px;
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .inputGroup {
+            margin-bottom: 15px;
+
+            label {
+                display: block;
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+
+            input {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 20px;
+
+                &:focus {
+                    border-color: #7dd87d;
+                    outline: none;
+                }
+            }
+
+            &.error input {
+                border-color: #f76d6d;
+            }
+        }
+
+        .checkboxGroup {
+            margin: 15px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            label {
+                font-size: 14px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                input {
+                    margin: 0;
+                    transform: scale(1.2);
+                }
+            }
+
+            a {
+                color: #7dd87d;
+            }
+        }
+
+        .oportunity {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #7dd87d;
+            border-radius: 5px;
+            background-color: white;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.3s ease;
+
+            &:checked {
+                background-color: #7dd87d;
+                border-color: #7dd87d;
+
+                &::before {
+                    content: "✔";
+                    color: white;
+                    font-size: 16px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            &:hover {
+                border-color: #5fc85f;
+            }
+
+            &:focus {
+                box-shadow: 0 0 5px rgba(125, 216, 125, 0.5);
+            }
+        }
+
+        label {
+            font-size: 16px;
+            color: #333;
+            user-select: none;
+
+        }
+
+        .buttonGroup {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+
+            button {
+                padding: 10px;
+                border: none;
+                border-radius: 20px;
+                font-size: 16px;
+                transition: background-color 0.3s;
+
+                &.primary {
+                    background-color: white;
+                    color: #7dd87d;
+                    font-size: 20px;
+                    border: 2px solid #7dd87d;
+                    max-width: 240px;
+                    transition: 0.1s linear;
+
+                    &:hover {
+                        background-color: #7dd87d;
+                        color: white;
+                    }
+                    &:active {
+                        transform: scale(0.9);
+                    }
+                }
+
+                &.secondary {
+                    background-color: #64D370;
+                    color: white;
+                    width: 240px;
+                    transition: 0.1s linear;
+                    height: 45px;
+                    font-size: 20px;
+                    &:active {
+                        transform: scale(0.9);
+                    }
+                }
+            }
+        }
+    }
+
+    .faq {
+        flex: 1;
+        min-width: 300px;
+        max-width: 500px;
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+                background: #fff;
+                border: 1px solid #ddd;
+                border-radius: 20px;
+                padding: 10px 15px;
+                margin-bottom: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: #f9f9f9;
+                }
+
+                span {
+                    font-size: 14px;
+                }
+
+                .arrow {
+                    font-size: 18px;
+                    color: #aaa;
+                }
+            }
+        }
+    }
+}

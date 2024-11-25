@@ -1,9 +1,11 @@
 'use client'
 import React, { useState } from "react";
-import LandingSlider from "./landing-slider";
+import LandingSlider from "./LandingItems/landing-slider";
 import "./landing.scss";
-import LandingPageInfo from "./landing-page-info-section"
-import LandingIconItems from "./landing-icon-items/index.jsx"
+import LandingPageInfo from "./LandingItems/landing-page-info-section"
+import LandingIconItems from "./LandingItems/landing-icon-items/index.jsx"
+import FoodPhotos from "./LandingItems/FoodPhoto"
+import FAQ from "./LandingItems/FAQ"
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -88,6 +90,8 @@ export default function Home() {
         </button>
       </section>
       <LandingPageInfo />
+      <FoodPhotos />
+      <FAQ />
     </div>
   );
 }

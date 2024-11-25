@@ -6,6 +6,7 @@
   font-weight: 700;
   -webkit-tap-highlight-color: transparent;
   user-select: none;
+  cursor: url("/images/cursor2.png"), pointer;
 }
 
 .landing-page-container {
@@ -73,7 +74,6 @@
   background: none;
   border: none;
   font-size: 24px;
-  cursor: pointer;
   color: #64D370;
 }
 
@@ -89,7 +89,6 @@
   height: 15px;
   border-radius: 50%;
   border: 2px solid #64D370;
-  cursor: pointer;
 }
 
 .indicator.active {

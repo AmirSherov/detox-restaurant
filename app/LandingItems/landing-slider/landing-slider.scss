@@ -33,8 +33,6 @@
             align-items: center;
             padding-top: 15px;
             justify-content: center;
-            cursor: pointer;
-
             &:hover {
                 background-color: #64D370;
                 color: #F5FAFF;
@@ -50,7 +48,7 @@
 
         .getting-img {
             position: absolute;
-            right: 0;
+            right: 0px;
             width: 600px;
             height: 600px;
         }
@@ -102,19 +100,22 @@
             display: none;
         }
     }
+
     @media (max-width:940px) {
         display: flex;
         flex-direction: column-reverse;
-        .landing-slider-images{
-            .ball{
+
+        .landing-slider-images {
+            .ball {
                 right: 0;
                 top: 0;
                 position: absolute;
                 width: 370px;
             }
-            .getting-img{
+
+            .getting-img {
                 position: absolute;
-                right: 0;
+                right: -50px;
                 top: 0;
                 width: 400px;
                 height: 400px
