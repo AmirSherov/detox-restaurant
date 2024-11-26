@@ -1,7 +1,7 @@
 'use client'
 import "./nav.scss"
 import { useState } from "react"
-
+import Link from "next/link"
 function Nav() {
     const [isOpen, setIsOpen] = useState(false)
 
@@ -17,10 +17,10 @@ function Nav() {
                         <h1>healthy ration</h1>
                     </div>
                     <div className="nav-url-container">
-                        <div>Программы питания</div>
+                        <div><Link href={'/'}>Программы питания</Link></div>
                         <div>Бизнес-ланчи</div>
                         <div>Gastro Shop</div>
-                        <div>О нас</div>
+                        <div><Link href={'./About'}>О нас</Link></div>
                         <div>Блог</div>
                     </div>
                     <div className="number-container">
@@ -40,7 +40,7 @@ function Nav() {
                     <div className="phone-number">
                         <img src="/images/phone-icon.png" alt="" />
                     </div>
-                    <div onClick={()=>{openMenu() }} className="burger-menu">
+                    <div onClick={() => { openMenu() }} className="burger-menu">
                         <div></div>
                         <div></div>
                         <div></div>
@@ -49,11 +49,11 @@ function Nav() {
                 </div>
                 <div className={`mobile-menu ${isOpen ? 'open' : ''}`}>
                     <div className="menu-items">
-                        <div className="menu-item">Программы питания</div>
-                        <div className="menu-item">Бизнес-ланчи</div>
-                        <div className="menu-item">Gastro Shop</div>
-                        <div className="menu-item">О нас</div>
-                        <div className="menu-item">Блог</div>
+                        <div  onClick={()=>openMenu()} className="menu-item"><Link href={'/'}>Программы питания</Link></div>
+                        <div onClick={()=>openMenu()} className="menu-item">Бизнес-ланчи</div>
+                        <div onClick={()=>openMenu()} className="menu-item">Gastro Shop</div>
+                        <div onClick={()=>openMenu()} className="menu-item"><Link href={'./About'}>О нас</Link></div>
+                        <div onClick={()=>openMenu()} className="menu-item">Блог</div>
                     </div>
 
                     <div className="language-switcher">
@@ -66,7 +66,7 @@ function Nav() {
                         +38 (068) 949 - 49 -19
                     </div>
 
-                    <div onClick={()=>{openMenu() }} className="close-btn">
+                    <div onClick={() => { openMenu() }} className="close-btn">
                         <span>&times;</span>
                     </div>
                 </div>

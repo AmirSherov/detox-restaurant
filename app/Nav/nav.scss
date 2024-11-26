@@ -1,3 +1,7 @@
+*{
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 700;
+}
 .nav-container {
   display: flex;
   flex-direction: column;
@@ -36,8 +40,11 @@
       z-index: 80;
       gap: 40px;
       transition: 0.3s all;
-
-      div:hover {
+      a{
+        text-decoration: none;
+        color: black;
+      }
+      a:hover {
         color: #64D370;
       }
     }
@@ -159,6 +166,13 @@
   .menu-item {
     padding: 15px;
     transition: color 0.3s;
+    text-decoration: none;
+    a{
+      text-decoration: none;
+      text-align: center;
+      color: white;
+      font-size: 22px;
+    }
   }
 
   .menu-item:hover {
