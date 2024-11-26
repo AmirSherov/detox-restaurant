@@ -12,42 +12,43 @@
       display: none;
     }
       justify-content: flex-start;
+      .header {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      
+      .imageGrid {
+        display: flex;
+        gap: 10px; 
+        padding-bottom: 10px; 
+        max-width: 100%; 
+        white-space: nowrap; 
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 20px;
+        overflow-x: scroll;
+        width: 100%;
+      
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      
+        @media (max-width: 1000px) {
+          justify-content: flex-start;
+        }
+      }
+      
+      .imageWrapper {
+        flex: 0 0 auto; 
+        scroll-snap-align: center; 
+        width: 250px; 
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      
   }
   
-  .header {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .imageGrid {
-    display: flex;
-    gap: 10px; 
-    padding-bottom: 10px; 
-    max-width: 100%; 
-    white-space: nowrap; 
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
-    overflow-x: scroll;
-    width: 100%;
-  
-    &::-webkit-scrollbar {
-      display: none;
-    }
-  
-    @media (max-width: 1000px) {
-      justify-content: flex-start;
-    }
-  }
-  
-  .imageWrapper {
-    flex: 0 0 auto; 
-    scroll-snap-align: center; 
-    width: 250px; 
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
   

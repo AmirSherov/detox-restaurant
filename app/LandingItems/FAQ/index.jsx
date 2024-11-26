@@ -15,7 +15,7 @@ const FormWithFAQ = () => {
   ];
 
   return (
-    <div className="container">
+    <div className="faq-container">
       <div className="form">
         <h2>Оформить заказ</h2>
         <div className="inputGroup">

@@ -2,3 +2,13 @@
     font-family: 'Comfortaa', sans-serif;
     font-weight: 700;
 }
+.about-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #F5FAFF;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
