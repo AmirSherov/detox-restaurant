@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 700;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    cursor: url("/images/cursor2.png"), pointer;
+}
+
+.busines-lunch-container {
+    header {
+        background-color: rgba(0, 0, 0, 0.66);
+        width: 100%;
+        min-height: 400px;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        position: relative;
+        
+        .busines-lunch-img {
+            z-index: 10;
+            background-color: transparent;
+            filter: brightness(0.5);
+            position: relative;
+            transform: translateX(10%) translateY(50%);
+            width: 300px; 
+            height: 300px;
+        }
+
+        .text-container {
+            z-index: 90;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 80%;
+            height: 20vh;
+            transform: translateX(12%) translateY(-100%);
+            text-align: center;
+            justify-content: center;
+
+            div:nth-child(1) {
+                font-size: 25px;
+            }
+
+            div:last-child button {
+                background-color: #64D370;
+                color: white;
+                border: none;
+                border-radius: 20px;
+                padding: 10px 20px;
+                font-size: 20px;
+                transition: 0.1s linear;
+
+                &:active {
+                    transform: scale(0.9);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .busines-lunch-container header {
+        min-height: 400px;
+    }
+
+    .busines-lunch-container .text-container {
+        width: 90%;
+        height: auto;
+        transform: translateX(0);
+        gap: 20px;
+    }
+
+    .busines-lunch-container .text-container div:nth-child(1) {
+        font-size: 20px;
+    }
+
+    .busines-lunch-container .text-container div:last-child button {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 490px) {
+    .busines-lunch-container header {
+        min-height: 700px;
+        .text-container{
+            transform: translateY(-30%) translateX(15%);
+        }
+    }
+
+    .busines-lunch-container .text-container {
+        width: 100%;
+        height: auto;
+        gap: 15px;
+    }
+
+    .busines-lunch-container .text-container div:nth-child(1) {
+        font-size: 18px;
+    }
+
+    .busines-lunch-container .text-container div:last-child button {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+}

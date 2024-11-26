@@ -18,7 +18,7 @@ function Nav() {
                     </div>
                     <div className="nav-url-container">
                         <div><Link href={'/'}>Программы питания</Link></div>
-                        <div>Бизнес-ланчи</div>
+                        <div><Link href={'./BusinesLunchs'}>Бизнес-ланчи</Link></div>
                         <div>Gastro Shop</div>
                         <div><Link href={'./About'}>О нас</Link></div>
                         <div>Блог</div>
@@ -50,7 +50,7 @@ function Nav() {
                 <div className={`mobile-menu ${isOpen ? 'open' : ''}`}>
                     <div className="menu-items">
                         <div  onClick={()=>openMenu()} className="menu-item"><Link href={'/'}>Программы питания</Link></div>
-                        <div onClick={()=>openMenu()} className="menu-item">Бизнес-ланчи</div>
+                        <div onClick={()=>openMenu()} className="menu-item"><Link href={'./BusinesLunchs'}>Бизнес-ланчи</Link></div>
                         <div onClick={()=>openMenu()} className="menu-item">Gastro Shop</div>
                         <div onClick={()=>openMenu()} className="menu-item"><Link href={'./About'}>О нас</Link></div>
                         <div onClick={()=>openMenu()} className="menu-item">Блог</div>
