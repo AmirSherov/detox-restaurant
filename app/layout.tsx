@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Nav from "./Nav";
+import Nav from "./Nav/nav";
 import Footer from "./Footer";
 export const metadata: Metadata = {
   title: "Detox program",

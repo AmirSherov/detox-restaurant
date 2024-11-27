@@ -73,8 +73,21 @@
 .next-arrow {
   background: none;
   border: none;
+  transition: 0.1s linear;
   font-size: 24px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
   color: #64D370;
+  &:hover {
+    background-color: #64D370;
+    color: white;
+  }
+  &:active{
+    transform: scale(0.9);
+    background-color: #64D370;
+    color: white;
+  }
 }
 
 .indicators {
