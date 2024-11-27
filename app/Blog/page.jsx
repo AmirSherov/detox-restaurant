@@ -1,98 +1,47 @@
-
 'use client';
-import "./blog.scss"
-import { useEffect, useState } from "react";
-import { getProducts } from '../getProductModule/index.js'; 
+import Link from 'next/link';
+import React, { useState } from "react";
+import "./blog.scss";
+const Page = () => {
+  const [visibleItems, setVisibleItems] = useState(3);
+  const items = [
+    { id: 1, databaseId: "product1", title: "Как поменять свои пищевые привычки?", date: "29.05.2020", imgSrc: "/images/blog1.png" },
+    { id: 2, databaseId: "product2", title: "Как сделать утреннюю зарядку?", date: "29.05.2020", imgSrc: "/images/blog2.png" },
+    { id: 3, databaseId: "product3", title: "Как быть продуктивным на работе?", date: "29.05.2020", imgSrc: "/images/blog3.png" },
+    { id: 4, databaseId: "product1", title: "Как улучшить своё здоровье?", date: "29.05.2020", imgSrc: "/images/blog1.png" },
+    { id: 5, databaseId: "product2", title: "Как настроить работу с командой?", date: "30.05.2020", imgSrc: "/images/blog2.png" },
+    { id: 6, databaseId: "product3", title: "Как выстроить карьеру?", date: "30.05.2020", imgSrc: "/images/blog3.png" },
+    { id: 7, databaseId: "product1", title: "Как научиться вести переговоры?", date: "01.06.2020", imgSrc: "/images/blog1.png" },
+    { id: 8, databaseId: "product2", title: "Как поддерживать мотивацию?", date: "01.06.2020", imgSrc: "/images/blog2.png" },
+    { id: 9, databaseId: "product3", title: "Как поддерживать мотивацию?", date: "01.06.2020", imgSrc: "/images/blog3.png" },
+  ];
 
-const Blog = () => {
-  const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const loadMoreItems = () => {
+    setVisibleItems((prevVisibleItems) => prevVisibleItems + 3);
+  };
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const products = await getProducts("all"); 
-      setData(products);
-      setLoading(false);
-    };
-
-    fetchData();
-  }, []); 
-
-  if (loading) return <div>Loading...</div>;
+  const currentItems = items.slice(0, visibleItems);
 
   return (
     <div>
-      <h1>Firestore Data</h1>
-      <ul>
-        {data.map((product, index) => (
-          <li key={index}>
-            <img src={product.img} alt="" />
-            <p>{product.text}</p>
-          </li>
+      <div className="grid">
+        {currentItems.map((item) => (
+          <div key={item.id} className="card">
+            <img width={300} height={200} src={item.imgSrc} alt={item.title} />
+            <h3>{item.title}</h3>
+            <p>{item.date}</p>
+            <Link href={`./DetailsPage/${item.databaseId}`}>
+              <button>Подробнее</button>
+            </Link>
+          </div>
         ))}
-      </ul>
+      </div>
+
+      <button onClick={loadMoreItems} className="load-more-button">
+        Еще
+      </button>
     </div>
   );
 };
 
-export default Blog;
-
-// 'use client';
-// import { useEffect, useState } from "react";
-// import { initializeApp } from "firebase/app";
-// import { getFirestore, collection, getDocs } from "firebase/firestore"; 
-// import { getAnalytics } from "firebase/analytics";
-
-// const firebaseConfig = {
-//   apiKey: "AIzaSyC26fY4qZ0sLO4JZqVQcEjGEZS_jFoT9nc",
-//   authDomain: "detox-res.firebaseapp.com",
-//   projectId: "detox-res",
-//   storageBucket: "detox-res.firebasestorage.app",
-//   messagingSenderId: "716996551128",
-//   appId: "1:716996551128:web:ff1eb0e26a1b93691bd2ad",
-//   measurementId: "G-04JC1BPH19"
-// };
-
-// const app = initializeApp(firebaseConfig);
-
-// const FirebaseComponent = () => {
-//   const [data, setData] = useState(null);
-//   const [analytics, setAnalytics] = useState(null);
-//   const [db, setDb] = useState(null);
-
-//   useEffect(() => {
-//     if (typeof window !== 'undefined') {
-//       setDb(getFirestore(app));
-//       setAnalytics(getAnalytics(app));
-//     }
-//   }, []);
-
-//   useEffect(() => {
-//     if (db) {
-//       const fetchData = async () => {
-//         const querySnapshot = await getDocs(collection(db, "products"));
-//         const dataArr = querySnapshot.docs.map(doc => doc.data());
-//         setData(dataArr); // Сохраняем массив объектов
-//       };
-//       fetchData();
-//     }
-//   }, [db]);
-
-//   if (!data) return <div>Loading...</div>;
-
-//   return (
-//     <div>
-//       <h1>Firestore Data</h1>
-//       <ul>
-//         {data.map((product, index) => (
-//           <li key={index}>
-//             <h2><img src={product.img} alt="" />{product.img}</h2> 
-//             <p>{product.text}</p> 
-//           </li>
-//         ))}
-//       </ul>
-//     </div>
-//   );
-// };
-
-// export default FirebaseComponent;
+export default Page;
