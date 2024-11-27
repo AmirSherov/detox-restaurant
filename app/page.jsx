@@ -71,7 +71,7 @@ export default function Home() {
 
   return (
     <div className="landing-page-container">
-      <div className="slider">
+      <div className="slider default">
         <div className="slider-content">
           <LandingSlider
             imgPath={imgPath}

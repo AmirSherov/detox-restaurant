@@ -68,7 +68,17 @@
   justify-content: center;
   gap: 10px;
 }
-
+.default{
+  transform: translateY(70px);
+  opacity: 0;
+  animation: effect 0.8s forwards;
+}
+@keyframes effect {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .prev-arrow,
 .next-arrow {
   background: none;

@@ -26,32 +26,32 @@ export default function LandingPageInfoSection() {
                             </div>
                         </div>
                         <div className="prices-section">
-                            <div className="item">
+                            <div className="item-left-side">
                                 <div>Тестовый день</div>
                                 <div>510 грн</div>
                                 <div>347 грн</div>
                             </div>
-                            <div className="item">
+                            <div className="item-left-side">
                                 <div>1 день</div>
                                 <div></div>
                                 <div>510 грн</div>
                             </div>
-                            <div className="item">
+                            <div className="item-left-side">
                                 <div>От 7 дней</div>
                                 <div>510грн</div>
                                 <div>490грн</div>
                             </div>
-                            <div className="item">
+                            <div className="item-left-side">
                                 <div>От 14 дней</div>
                                 <div>510грн</div>
                                 <div>445грн</div>
                             </div>
-                            <div className="item">
+                            <div className="item-left-side">
                                 <div>От 30 дней</div>
                                 <div>510грн</div>
                                 <div>445грн</div>
                             </div>
-                            <div className="item">
+                            <div className="item-left-side">
                                 <div>Завтрак и ужин</div>
                                 <div>-15%</div>
                                 <div>443грн</div>

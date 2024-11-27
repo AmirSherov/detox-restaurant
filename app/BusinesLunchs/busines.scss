@@ -6,7 +6,7 @@
     font-weight: 700;
     -webkit-tap-highlight-color: transparent;
     user-select: none;
-    cursor: url("/images/cursor2.png"), pointer;
+    cursor: url("/images/cursor2.png");
 }
 
 .busines-lunch-container {
@@ -14,6 +14,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
     header {
         background-color: rgba(0, 0, 0, 0.66);
         width: 100%;
@@ -22,14 +23,14 @@
         align-items: center;
         color: white;
         position: relative;
-        
+
         .busines-lunch-img {
             z-index: 10;
             background-color: transparent;
             filter: brightness(0.5);
             position: relative;
             transform: translateX(10%) translateY(50%);
-            width: 300px; 
+            width: 300px;
             height: 300px;
         }
 
@@ -64,20 +65,41 @@
             }
         }
     }
+
     .items-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 20px;
         flex-wrap: wrap;
         flex-direction: row;
-        @media(max-width: 800px){
-            grid-template-columns: 1fr 1fr;
+
+        .fade-in {
+            display: flex;
+            gap: 30px;
         }
-        @media(max-width: 500px){
+
+        @media(max-width: 800px) {
+            .fade-in {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media(max-width: 500px) {
             grid-template-columns: 1fr;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(80px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.active {
+            opacity: 1;
+            transform: translateY(0);
         }
     }
 }
@@ -107,7 +129,8 @@
 @media (max-width: 560px) {
     .busines-lunch-container header {
         min-height: 700px;
-        .text-container{
+
+        .text-container {
             transform: translateY(-30%) translateX(15%);
         }
     }

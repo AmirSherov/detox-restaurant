@@ -6,7 +6,7 @@
     font-weight: 700;
     -webkit-tap-highlight-color: transparent;
     user-select: none;
-    cursor: url("/images/cursor2.png"), pointer;
+    cursor: url("/images/cursor2.png");
 }
 .about-container{
     display: flex;
@@ -17,4 +17,25 @@
     background-color: #F5FAFF;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    .fade-in {
+        opacity: 0;
+        transform: translateY(80px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+      }
+      
+      .fade-in.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .fade-default{
+        opacity: 0;
+        transform: translateY(100px);
+        animation: effect 0.9s ease forwards;
+      }
 }
+@keyframes effect {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
