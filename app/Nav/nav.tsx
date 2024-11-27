@@ -21,7 +21,7 @@ function Nav() {
                         <div><Link href={'./BusinesLunchs'}>Бизнес-ланчи</Link></div>
                         <div>Gastro Shop</div>
                         <div><Link href={'./About'}>О нас</Link></div>
-                        <div>Блог</div>
+                        <div><Link href={'./Blog'}>Блог</Link></div>
                     </div>
                     <div className="number-container">
                         <h3>+38 (068)949 - 49 -19</h3>
@@ -53,7 +53,7 @@ function Nav() {
                         <div onClick={()=>openMenu()} className="menu-item"><Link href={'./BusinesLunchs'}>Бизнес-ланчи</Link></div>
                         <div onClick={()=>openMenu()} className="menu-item">Gastro Shop</div>
                         <div onClick={()=>openMenu()} className="menu-item"><Link href={'./About'}>О нас</Link></div>
-                        <div onClick={()=>openMenu()} className="menu-item">Блог</div>
+                        <div onClick={()=>openMenu()} className="menu-item"><Link href={'./Blog'}>Блог</Link></div>
                     </div>
 
                     <div className="language-switcher">
