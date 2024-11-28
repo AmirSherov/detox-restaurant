@@ -8,11 +8,12 @@ import LandingIconItems from "./LandingItems/landing-icon-items/index.jsx";
 import FoodPhotos from "./LandingItems/FoodPhoto";
 import FAQ from "./LandingItems/FAQ";
 
+
 export default function Home() {
   const [imgPath, setImgPath] = useState("/images/mask1.png");
   const [mainText, setMainText] = useState("Detox программа – вкусное очищение организма");
   const [secondText, setSecondText] = useState("8 бутылочек натуральных смузи и фрешей.");
-  const [sales, setSales] = useState("от 500 грн");
+  const [sales, setSales] = useState("от 500 грн"); 
 
   const slides = [
     {

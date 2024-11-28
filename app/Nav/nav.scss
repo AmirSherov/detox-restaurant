@@ -43,6 +43,7 @@
       transition: 0.3s all;
       text-decoration: none;
       color: black;
+
       div:hover {
         color: #64D370;
       }
@@ -118,16 +119,17 @@
       justify-content: space-between;
       padding: 30px;
       z-index: 10000;
+      opacity: 0;
       transform: translateX(100%);
-      transition: transform 0.3s ease-in-out;
+      transition: transform 0.5s, opacity 0.6s ease-in-out;
     }
 
 
     .mobile-menu.open {
-      transform: translateX(0);
+      transform: translateX(0%);
       z-index: 9000;
+      opacity: 2;
     }
-
 
     .close-btn {
       position: absolute;
@@ -142,7 +144,7 @@
       align-items: center;
       border-radius: 50%;
       font-size: 30px;
-      transition: background-color 0.3s;
+      transition: background-color 0.3s, transform 0.2s;
     }
 
     .close-btn:hover {
@@ -298,6 +300,4 @@
       }
     }
   }
-
-
 }

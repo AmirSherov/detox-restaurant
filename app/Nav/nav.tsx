@@ -49,7 +49,7 @@ function Nav() {
                     </div>
                     <div className="line"></div>
                 </div>
-                <div className={`mobile-menu ${isOpen ? 'open' : ''}`}>
+                <div className={`mobile-menu ${isOpen ? 'open' : 'сlosing'}`}>
                     <div className="menu-items">
                         <div className="menu-item" onClick={() => { router.push('/') , openMenu() }}>Программы питания</div>
                         <div className="menu-item" onClick={() => { router.push('/BusinesLunchs') , openMenu() }}>Бизнес-ланчи</div>

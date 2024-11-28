@@ -1,6 +1,7 @@
+'use client'
 import React from "react";
 import "./faq.scss";
-
+import { useState } from "react";
 const FormWithFAQ = () => {
   const faqItems = [
     "Как осуществляется доставка правильного питания?",
@@ -39,7 +40,7 @@ const FormWithFAQ = () => {
         <div className="buttonGroup">
           <button className="primary">Заказ по телефону</button>
           <span>ИЛИ</span>
-          <button className="secondary">Онлайн заказ</button>
+          <button onClick={() => setIsModalOpen(true)} className="secondary">Онлайн заказ</button>
         </div>
       </div>
       <div className="faq">
