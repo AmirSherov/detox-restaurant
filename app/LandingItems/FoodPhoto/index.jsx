@@ -10,7 +10,7 @@ export default function FoodPhoto() {
     return (
         <>
             <div className={"galleryContainer"}>
-                <h2 className={"header"}>Фото блюд</h2>
+                <h2 className={"header-images"}>Фото блюд</h2>
                 <div className={"imageGrid"}>
                     {images.map((src, index) => (
                         <div key={index} className={"imageWrapper"}>

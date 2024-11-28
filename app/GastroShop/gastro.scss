@@ -16,65 +16,66 @@
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
-}
 
-.gastro-items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.gastro-items img {
-    max-width: 100%; 
-    height: auto; 
-    border-radius: 10px; 
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.gastro-items img:hover {
-    transform: scale(1.05); 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
-}
-
-
-@media (max-width: 400px) {
-    .gastro-items img {
-        width: 100%; 
-        max-width: 100%; 
+    .gastro-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
     }
-}
 
-.gastro-down-side {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-}
+    .gastro-items img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
 
-.gastro-down-side button {
-    outline: none;
-    border: 2px solid #64D370;
-    color: #64D370;
-    background-color: transparent;
-    border-radius: 20px;
-    padding: 10px;
-    transition: 0.1s linear;
-    position: relative;
-}
+    .gastro-items img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
 
-.gastro-down-side button::after {
-    content: ">";
-    padding-left: 2px;
-    transition: padding-left 0.1s linear;
-}
 
-.gastro-down-side button:hover::after {
-    padding-left: 10px;
-}
+    @media (max-width: 400px) {
+        .gastro-items img {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
 
-.gastro-down-side button:active {
-    transform: scale(0.9);
+    .gastro-down-side {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gastro-down-side button {
+        outline: none;
+        border: 2px solid #64D370;
+        color: #64D370;
+        background-color: transparent;
+        border-radius: 20px;
+        padding: 10px;
+        transition: 0.1s linear;
+        position: relative;
+    }
+
+    .gastro-down-side button::after {
+        content: ">";
+        padding-left: 2px;
+        transition: padding-left 0.1s linear;
+    }
+
+    .gastro-down-side button:hover::after {
+        padding-left: 10px;
+    }
+
+    .gastro-down-side button:active {
+        transform: scale(0.9);
+    }
+
 }

@@ -3,7 +3,7 @@ export default function LandingPageInfoSection() {
     return (
         <>
             <div className="nutrition-program">
-                <div className="header">
+                <div className="header-info">
                     <div className="programs">
                         <div>EXPRESS FIT<br /><span>800 ккал</span></div>
                         <div>SLIM<br />1000 ккал</div>

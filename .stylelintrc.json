@@ -1,0 +1,12 @@
+{
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "block-no-empty": true,
+      "color-no-invalid-hex": true,
+      "declaration-colon-space-before": "never",
+      "declaration-block-trailing-semicolon": "always",
+      "no-duplicate-selectors": true,  
+      "no-empty-source": true
+    }
+  }
+  

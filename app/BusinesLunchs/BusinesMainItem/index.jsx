@@ -2,7 +2,7 @@ import "./businesItem.scss"
 export default function BusinesMainItem() {
     return (
         <>
-            <header>
+            <div className="busines-main-item-container">
                 <img className="busines-lunch-img" src="/images/sweet_balls1.png" alt="" />
                 <div className="text-container">
                     <div>Бизнес-ланчи</div>
@@ -21,7 +21,7 @@ export default function BusinesMainItem() {
                         <button>Оформить заказ</button>
                     </div>
                 </div>
-            </header>
+            </div>
         </>
     )
 }

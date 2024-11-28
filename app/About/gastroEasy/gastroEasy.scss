@@ -1,13 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 700;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  cursor: url("/images/cursor2.png");
+}
+
 .gastroEasy-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 20px;
-    background-color: #f5faff;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #f5faff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
   .gastroEasy-content {
     display: flex;
     justify-content: space-between;
@@ -15,24 +25,24 @@
     width: 100%;
     max-width: 1200px;
     padding: 20px;
-  
+
     .gastroEasy-text-side {
       flex: 1;
       padding-right: 30px;
-  
+
       h2 {
         font-size: 24px;
         font-weight: bold;
         color: #64d370;
       }
-  
+
       p {
         font-size: 18px;
         line-height: 1.6;
         color: #000;
         margin-bottom: 20px;
       }
-  
+
       .social-links {
         a {
           color: #64d370;
@@ -42,13 +52,13 @@
         }
       }
     }
-  
+
     .gastroEasy-img-side {
       flex: 1;
       display: flex;
       justify-content: center;
       align-items: center;
-  
+
       img {
         width: 100%;
         height: auto;
@@ -57,20 +67,20 @@
       }
     }
   }
-  
+
   @media (max-width: 768px) {
     .gastroEasy-content {
       flex-direction: column-reverse;
       text-align: center;
-  
+
       .gastroEasy-text-side {
         padding-right: 0;
         margin-bottom: 20px;
       }
-  
+
       .gastroEasy-img-side {
         margin-bottom: 20px;
       }
     }
   }
-  
+}

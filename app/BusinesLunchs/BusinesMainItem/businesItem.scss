@@ -1,94 +1,115 @@
-header {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 700;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    cursor: url("/images/cursor2.png");
+}
+.busines-main-item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: rgba(0, 0, 0, 0.66);
     width: 100%;
-    min-height: 400px;
-    justify-content: center;
-    align-items: center;
+    min-height: 500px;
+    padding: 20px;
     color: white;
+    text-align: center;
 
     .busines-lunch-img {
-        z-index: 10;
-        background-color: transparent;
-        filter: brightness(0.5);
-        transform: translateX(10%) translateY(50%);
         width: 300px;
         height: 300px;
+        object-fit: cover; 
+        filter: brightness(0.7); 
+        margin-bottom: 20px;
     }
 
     .text-container {
-        z-index: 90;
+        max-width: 800px;
         display: flex;
         flex-direction: column;
         gap: 20px;
-        width: 80%;
-        height: 20vh;
-        transform: translateX(12%) translateY(-100%);
-        text-align: center;
-        justify-content: center;
+        font-size: 18px;
 
-        div:nth-child(1) {
-            font-size: 25px;
+        div:first-child {
+            font-size: 28px;
+            font-weight: bold;
         }
 
-        div:last-child button {
-            background-color: #64D370;
-            color: white;
-            border: none;
-            border-radius: 20px;
-            padding: 10px 20px;
-            font-size: 20px;
-            transition: 0.1s linear;
+        div:last-child {
+            margin-top: 10px;
 
-            &:active {
-                transform: scale(0.9);
+            button {
+                background-color: #64D370;
+                color: white;
+                border: none;
+                border-radius: 20px;
+                padding: 10px 20px;
+                font-size: 18px;
+                cursor: pointer;
+                transition: transform 0.2s ease, background-color 0.2s ease;
+
+                &:hover {
+                    background-color: #57c260;
+                }
+
+                &:active {
+                    transform: scale(0.95);
+                }
             }
         }
     }
 }
 
 @media (max-width: 768px) {
-    header {
+    .busines-main-item-container {
         min-height: 400px;
-    }
+        padding: 15px;
 
-    .text-container {
-        width: 90%;
-        height: auto;
-        transform: translateX(0);
-        gap: 20px;
-    }
+        .busines-lunch-img {
+            width: 250px;
+            height: 250px;
+        }
 
-    .text-container div:nth-child(1) {
-        font-size: 20px;
-    }
+        .text-container {
+            font-size: 16px;
 
-    .text-container div:last-child button {
-        font-size: 18px;
-        padding: 8px 16px;
+            div:first-child {
+                font-size: 24px;
+            }
+
+            button {
+                font-size: 16px;
+                padding: 8px 16px;
+            }
+        }
     }
 }
 
-@media (max-width: 560px) {
-    header {
-        min-height: 700px;
+@media (max-width: 480px) {
+    .busines-main-item-container {
+        min-height: 350px;
+
+        .busines-lunch-img {
+            width: 200px;
+            height: 200px;
+        }
 
         .text-container {
-            transform: translateY(-10%) translateX(15%);
+            font-size: 14px;
+
+            div:first-child {
+                font-size: 20px;
+            }
+
+            button {
+                font-size: 14px;
+                padding: 6px 12px;
+            }
         }
-    }
-
-    .text-container {
-        width: 100%;
-        height: auto;
-        gap: 15px;
-    }
-
-    .text-container div:nth-child(1) {
-        font-size: 18px;
-    }
-
-    .text-container div:last-child button {
-        font-size: 16px;
-        padding: 6px 12px;
     }
 }

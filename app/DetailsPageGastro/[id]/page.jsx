@@ -34,7 +34,6 @@ export default function GastroDetails() {
 
     return (
         <>
-            <Header />
             <div className="details-page-container">
                 {Array.from({ length: 4 }).map((_, index) => (
                     <div key={index} className="product-card">

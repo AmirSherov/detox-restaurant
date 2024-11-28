@@ -1,3 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 700;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    cursor: url("/images/cursor2.png");
+}
 .gastroHistory-container {
     display: flex;
     flex-direction: column; 
