@@ -10,7 +10,6 @@ header {
         z-index: 10;
         background-color: transparent;
         filter: brightness(0.5);
-        position: relative;
         transform: translateX(10%) translateY(50%);
         width: 300px;
         height: 300px;
@@ -18,7 +17,6 @@ header {
 
     .text-container {
         z-index: 90;
-        position: relative;
         display: flex;
         flex-direction: column;
         gap: 20px;

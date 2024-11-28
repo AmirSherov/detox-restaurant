@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import './gastroDetails.scss';
 import { getProducts } from "../../geProductGastro/index.js";
 import { useParams } from 'next/navigation';
-import Header from '../../BusinesLunchs/BusinesMainItem/index.jsx';
+import Header from "../../BusinesLunchs/BusinesMainItem/index.jsx"
 
 export default function GastroDetails() {
     const [product, setProduct] = useState(null);
