@@ -40,7 +40,7 @@ const FormWithFAQ = () => {
         <div className="buttonGroup">
           <button className="primary">Заказ по телефону</button>
           <span>ИЛИ</span>
-          <button onClick={() => setIsModalOpen(true)} className="secondary">Онлайн заказ</button>
+          <button className="secondary">Онлайн заказ</button>
         </div>
       </div>
       <div className="faq">
