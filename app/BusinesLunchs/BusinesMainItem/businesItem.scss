@@ -5,7 +5,6 @@ header {
     justify-content: center;
     align-items: center;
     color: white;
-    position: relative;
 
     .busines-lunch-img {
         z-index: 10;
@@ -46,5 +45,52 @@ header {
                 transform: scale(0.9);
             }
         }
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        min-height: 400px;
+    }
+
+    .text-container {
+        width: 90%;
+        height: auto;
+        transform: translateX(0);
+        gap: 20px;
+    }
+
+    .text-container div:nth-child(1) {
+        font-size: 20px;
+    }
+
+    .text-container div:last-child button {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 560px) {
+    header {
+        min-height: 700px;
+
+        .text-container {
+            transform: translateY(-10%) translateX(15%);
+        }
+    }
+
+    .text-container {
+        width: 100%;
+        height: auto;
+        gap: 15px;
+    }
+
+    .text-container div:nth-child(1) {
+        font-size: 18px;
+    }
+
+    .text-container div:last-child button {
+        font-size: 16px;
+        padding: 6px 12px;
     }
 }

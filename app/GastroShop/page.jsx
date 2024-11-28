@@ -1,8 +1,9 @@
 import "./gastro.scss";
+import Link from "next/link";
 export default function GastroShop() {
     const Items = [
-        { id: 1, title: "Полезные конфеты", img: "/images/gastro1.png" },
-        { id: 2, title: "Гранола", img: "/images/gastro2.png" }
+        { id: 1, databaseId: "product1", title: "Полезные конфеты", img: "/images/gastro1.png" },
+        { id: 2, databaseId: "product2", title: "Гранола", img: "/images/gastro2.png" }
     ]
     return (
         <>
@@ -13,7 +14,7 @@ export default function GastroShop() {
                             <img width={400} height={250} src={item.img} alt={item.title} />
                             <div className="gastro-down-side">
                                 <h3>{item.title}</h3>
-                                <button>Ассортимент</button>
+                                <Link href={`./DetailsPageGastro/${item.databaseId}`}><button>Ассортимент</button></Link>
                             </div>
                         </div>
                     ))}

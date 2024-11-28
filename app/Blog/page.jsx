@@ -30,7 +30,7 @@ const Page = () => {
             <img width={300} height={200} src={item.imgSrc} alt={item.title} />
             <h3>{item.title}</h3>
             <p>{item.date}</p>
-            <Link href={`./DetailsPage/${item.databaseId}`}>
+            <Link href={`./DetailsPageBlog/${item.databaseId}`}>
               <button>Подробнее</button>
             </Link>
           </div>

@@ -1,8 +1,10 @@
 'use client'
 import "./nav.scss"
 import { useState } from "react"
+import { useRouter } from "next/navigation"
 import Link from "next/link"
 function Nav() {
+    const router = useRouter()
     const [isOpen, setIsOpen] = useState(false)
 
     const openMenu = () => {
@@ -17,11 +19,11 @@ function Nav() {
                         <h1>healthy ration</h1>
                     </div>
                     <div className="nav-url-container">
-                        <div><Link href={'/'}>Программы питания</Link></div>
-                        <div><Link href={'./BusinesLunchs'}>Бизнес-ланчи</Link></div>
-                        <div><Link href={'./GastroShop'}>Gastro Shop</Link></div>
-                        <div><Link href={'./About'}>О нас</Link></div>
-                        <div><Link href={'./Blog'}>Блог</Link></div>
+                        <div onClick={() => { router.push('/') }}>Программы питания</div>
+                        <div onClick={() => { router.push('/BusinesLunchs') }}>Бизнес-ланчи</div>
+                        <div onClick={() => { router.push('/GastroShop') }}>Gastro Shop</div>
+                        <div onClick={() => { router.push('/About') }}>О нас</div>
+                        <div onClick={() => { router.push('/Blog') }}>Блог</div>
                     </div>
                     <div className="number-container">
                         <h3>+38 (068)949 - 49 -19</h3>
@@ -49,13 +51,12 @@ function Nav() {
                 </div>
                 <div className={`mobile-menu ${isOpen ? 'open' : ''}`}>
                     <div className="menu-items">
-                        <div  onClick={()=>openMenu()} className="menu-item"><Link href={'/'}>Программы питания</Link></div>
-                        <div onClick={()=>openMenu()} className="menu-item"><Link href={'./BusinesLunchs'}>Бизнес-ланчи</Link></div>
-                        <div onClick={()=>openMenu()} className="menu-item"><Link href={'./GastroShop'}>Gastro Shop</Link></div>
-                        <div onClick={()=>openMenu()} className="menu-item"><Link href={'./About'}>О нас</Link></div>
-                        <div onClick={()=>openMenu()} className="menu-item"><Link href={'./Blog'}>Блог</Link></div>
+                        <div className="menu-item" onClick={() => { router.push('/') , openMenu() }}>Программы питания</div>
+                        <div className="menu-item" onClick={() => { router.push('/BusinesLunchs') , openMenu() }}>Бизнес-ланчи</div>
+                        <div className="menu-item" onClick={() => { router.push('/GastroShop') , openMenu() }}>Gastro Shop</div>
+                        <div className="menu-item" onClick={() => { router.push('/About'), openMenu() }}>О нас</div>
+                        <div className="menu-item" onClick={() => { router.push('/Blog'), openMenu() }}>Блог</div>
                     </div>
-
                     <div className="language-switcher">
                         <button className="lang-btn active">RU</button>
                         <button className="lang-btn">UA</button>

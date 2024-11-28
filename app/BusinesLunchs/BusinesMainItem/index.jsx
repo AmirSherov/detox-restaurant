@@ -1,10 +1,9 @@
 import "./businesItem.scss"
-
 export default function BusinesMainItem() {
     return (
         <>
             <header>
-                <img className="busines-lunch-img" src="./images/sweet_balls1.png" alt="" />
+                <img className="busines-lunch-img" src="/images/sweet_balls1.png" alt="" />
                 <div className="text-container">
                     <div>Бизнес-ланчи</div>
                     <div>Представляем сладкую коллекцию полезных конфет. Созданы с любовью и изготовлены

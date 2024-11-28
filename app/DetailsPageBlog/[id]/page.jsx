@@ -1,14 +1,13 @@
 'use client';
 import React, { useState, useEffect } from "react";
-import Link from "next/link.js";
 import { useParams } from "next/navigation";
-import { getProducts } from "../../getProductModule/index.js";
+import { getProducts } from "../../getProductBlog/index.js";
 import "./details.scss";
-
+import { useRouter } from "next/navigation";
 function DetailsPage() {
   const [product, setProduct] = useState(null); 
   const { id } = useParams();
-
+  const router = useRouter();
   useEffect(() => {
     if (!id) return; 
 
@@ -45,8 +44,8 @@ function DetailsPage() {
         </div>
       </div>
 
-      <button className="back-button" >
-        <Link href="/Blog">Назад</Link>
+      <button onClick={() => router.push("/Blog")} className="back-button" >
+        Назад
       </button>
     </div>
   );
