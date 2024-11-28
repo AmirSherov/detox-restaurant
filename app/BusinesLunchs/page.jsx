@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import "./busines.scss"
 import Item from "./Item"
 import FoodPhoto from "../LandingItems/FoodPhoto"
-import MainItem from "./BusinesMainItem/index.jsx"
+import Header from "./BusinesMainItem/index.jsx"
 export default function BusinesLunchs() {
     useEffect(() => {
 
@@ -31,7 +31,7 @@ export default function BusinesLunchs() {
     return (
         <>
             <div className="busines-lunch-container">
-                <MainItem />
+                <Header />
                 <div className="items-container">
                     <div className="fade-in">
                         <Item imagePath="./images/busines1.png" />

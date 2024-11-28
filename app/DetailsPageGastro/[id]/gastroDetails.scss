@@ -9,16 +9,8 @@
     cursor: url("/images/cursor2.png"), auto;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #f5f5f5;
-}
 
-.details-page-container {
+.details-page-container-gastro {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
@@ -31,7 +23,7 @@ body {
         grid-template-columns: 1fr;
     }
 
-    .product-card {
+    .product-card-gastro {
         border: 1px solid #ddd;
         border-radius: 10px;
         padding: 20px;
@@ -41,26 +33,26 @@ body {
         transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
-    .product-card:hover {
+    .product-card-gastro:hover {
         transform: translateY(-5px);
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
 
-    .product-card img {
+    .product-card-gastro img {
         width: 100%;
         height: auto;
         border-radius: 10px;
         object-fit: cover;
     }
 
-    .product-details {
+    .product-details-gastro {
         display: flex;
         justify-content: space-around;
         margin: 10px 0;
         font-size: 14px;
     }
 
-    .product-price {
+    .product-price-gastro {
         color: #64D370;
         font-weight: bold;
         margin-top: 10px;

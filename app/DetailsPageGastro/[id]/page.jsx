@@ -34,19 +34,20 @@ export default function GastroDetails() {
 
     return (
         <>
-            <div className="details-page-container">
+        <Header/>
+            <div className="details-page-container-gastro">
                 {Array.from({ length: 4 }).map((_, index) => (
-                    <div key={index} className="product-card">
+                    <div key={index} className="product-card-gastro">
                         <img src={product.img} alt={product.name} />
                         <h3>{product.name}</h3>
                         <p>{product.description}</p>
-                        <div className="product-details">
+                        <div className="product-details-gastro">
                             <span>Белки: {product.proteins}</span>
                             <span>Жиры: {product.fats}</span>
                             <span>Углеводы: {product.carbs}</span>
                             <span>{product.calories} ккал</span>
                         </div>
-                        <div className="product-price">
+                        <div className="product-price-gastro">
                             <span>{product.price} грн / 1 шт</span>
                         </div>
                     </div>
