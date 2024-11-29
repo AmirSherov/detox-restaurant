@@ -3,9 +3,11 @@ import "./nav.scss"
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 import Link from "next/link"
+import SmallModal from "../LandingItems/smallModal/index.jsx"
 function Nav() {
     const router = useRouter()
     const [isOpen, setIsOpen] = useState(false)
+    const [isSmallModalOpen, setIsSmallModalOpen] = useState(false)
 
     const openMenu = () => {
         setIsOpen(!isOpen)
@@ -39,7 +41,7 @@ function Nav() {
                         <img height={100} width={150} src="/images/logo.png" alt="" />
                         <h4>healthy ration</h4>
                     </div>
-                    <div className="phone-number">
+                    <div onClick={() => { setIsSmallModalOpen(true) }} className="phone-number">
                         <img src="/images/phone-icon.png" alt="" />
                     </div>
                     <div onClick={() => { openMenu() }} className="burger-menu">
@@ -71,6 +73,7 @@ function Nav() {
                         <span>&times;</span>
                     </div>
                 </div>
+                <SmallModal status={isSmallModalOpen} close={() => setIsSmallModalOpen(false)} />
             </div>
         </>
     )

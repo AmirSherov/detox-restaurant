@@ -57,7 +57,7 @@ export default function LandingPageInfoSection() {
                                 <div>443грн</div>
                             </div>
                         </div>
-                        <button>Заказать</button>
+                        <button className="schedule-button">Заказать</button>
                     </div>
                     <div className="schedule-right-side">
                         <div className="days">
