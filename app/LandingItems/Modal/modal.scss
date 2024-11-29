@@ -1,0 +1,244 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 700;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  cursor: url("/images/cursor2.png");
+}
+.overlay-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.542);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-modal {
+  border-radius: 8px;
+  width: 70%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.close-button-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;  
+}
+
+.title-modal {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: white;
+}
+
+.form-modal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+}
+
+input {
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  padding: 12px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.submit-button-modal {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  width: fit-content;
+  margin: 20px auto 0;
+  display: block;
+}
+
+.submit-button-modal:hover {
+  background-color: #64D370;
+}
+
+.right-side-modal,
+.left-side-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.grid-container-modal,
+.grid-container-2-modal {
+  display: grid;
+  gap: 15px;
+}
+
+.grid-container-modal {
+  grid-template-columns: 3fr 1fr 1fr;
+}
+
+.grid-container-2-modal {
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.grid-container-3-modal {
+  gap: 10px;
+  margin-top: 20px;
+label{
+  color: white;
+}
+}
+
+.radios-modal {
+  margin-right: 10px;
+  text-align: center;
+  position: relative;
+  top: 16px;
+}
+
+.dropdown-modal {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.dropbtn-modal {
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background: white;
+  color: #747474;
+  border-radius: 25px;
+  padding: 12px;
+  font-size: 14px;
+  width: 100%;
+  text-align: left;
+}
+
+.dropdown-content-modal {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.dropdown-content-modal a {
+  color: black;
+  padding: 10px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content-modal a:hover {
+  background-color: #64D370;
+  color: white;
+}
+
+.dropdown-modal:hover .dropdown-content-modal {
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .modal-modal {
+    width: 85%;
+    padding: 10px;
+  }
+
+  .form-modal {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .grid-container-modal,
+  .grid-container-2-modal {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 950px) {
+  .title-modal {
+    font-size: 15px;
+  }
+
+  .submit-button-modal {
+    width: 100%;
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .dropbtn-modal {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  input {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .radios-modal {
+    top: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .modal-modal {
+    width: 95%;
+    border-radius: 0;
+    padding: 8px;
+    overflow-y: auto; 
+    max-height: 90vh; 
+    &::-webkit-scrollbar{
+      display: none;
+    }
+  }
+
+  .form-modal {
+    gap: 8px;
+  }
+
+  .title-modal {
+    font-size: 13px;
+  }
+
+  .submit-button-modal {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .dropbtn-modal {
+    padding: 6px;
+    font-size: 11px;
+  }
+
+  input {
+    padding: 6px;
+    font-size: 11px;
+  }
+}

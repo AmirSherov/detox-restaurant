@@ -1,8 +1,12 @@
 'use client'
 import React from "react";
 import "./faq.scss";
+import Modal from "../Modal/index.jsx";
 import { useState } from "react";
+import SmallModal from "../smallModal/index.jsx";
 const FormWithFAQ = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isSmallModalOpen, setIsSmallModalOpen] = useState(false);
   const faqItems = [
     "Как осуществляется доставка правильного питания?",
     "Можно ли менять время доставки/место?",
@@ -38,9 +42,9 @@ const FormWithFAQ = () => {
           </label>
         </div>
         <div className="buttonGroup">
-          <button className="primary">Заказ по телефону</button>
+          <button onClick={() => setIsSmallModalOpen(!isSmallModalOpen)} className="primary">Заказ по телефону</button>
           <span>ИЛИ</span>
-          <button className="secondary">Онлайн заказ</button>
+          <button onClick={() => setIsOpen(!isOpen)} className="secondary">Онлайн заказ</button>
         </div>
       </div>
       <div className="faq">
@@ -54,6 +58,10 @@ const FormWithFAQ = () => {
           ))}
         </ul>
       </div>
+      {isOpen && <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} />}
+        {isSmallModalOpen&&
+        <SmallModal status={isSmallModalOpen} close={() => setIsSmallModalOpen(!isSmallModalOpen)}/>
+        }
     </div>
   );
 };
