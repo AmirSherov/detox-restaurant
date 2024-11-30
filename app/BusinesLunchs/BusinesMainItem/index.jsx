@@ -1,24 +1,22 @@
 import "./businesItem.scss"
+import { useTranslation } from "react-i18next"
 export default function BusinesMainItem() {
+    const { t } = useTranslation();
     return (
         <>
             <div className="busines-main-item-container">
                 <img className="busines-lunch-img" src="/images/sweet_balls1.png" alt="" />
                 <div className="text-container">
-                    <div>Бизнес-ланчи</div>
-                    <div>Представляем сладкую коллекцию полезных конфет. Созданы с любовью и изготовлены
-                        из натуральных продуктов без добавления сахара - с заботой о вас и ваших близких!
+                    <div>{t("BusinessMainItem.text-1")}</div>
+                    <div>{t("BusinessMainItem.text-2")}
                     </div>
-                    <div>Стоимость доставки 60 грн по предварительному заказу (за 1 сутки).
-                        Предварительный заказ предполагает доставку на следующий день с 6:00-10:00.
-                        Минимальный заказ - от 6 конфет. Вес 1 кофетки 25 г.
+                    <div>{t("BusinessMainItem.text-3")}
                     </div>
-                    <div>Заказы "на завтра" принимаются до 11-00 текущего дня.
+                    <div>{t("BusinessMainItem.text-4")}
                     </div>
-                    <div>Конфеты доставляются в прозрачных пакетах со стикером. Вы можете заказать
-                        подарочный бокс с лентой стоимостью 20 грн</div>
+                    <div>{t("BusinessMainItem.text-5")}</div>
                     <div>
-                        <button>Оформить заказ</button>
+                        <button>{t("BusinessMainItem.text-6")}</button>
                     </div>
                 </div>
             </div>

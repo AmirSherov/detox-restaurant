@@ -25,10 +25,33 @@
         "text-4": "Friends, if you have any questions, you can easily call us or write to me personally on Instagram or Facebook.",
         "text-5": "Sincerely, Kirill Kobylinsky."
     },
-    "AboutBegin":{
-        "text-1" : "Hello! My name is Kirill Kobylinsky, and I am the founder of GastroChef.",
-        "text-2" : "I am a Master of Sports of Ukraine in weightlifting, and I also was a member of the Ukrainian national team.",
-        "text-3" : "I have a higher education at the National University of Physical Education and Sports of Ukraine (NUPESU), and in the past I was a professional fitness trainer!",
-        "text-4" : "And I want to tell you more about GastroChef."
+    "AboutBegin": {
+        "text-1": "Hello! My name is Kirill Kobylinsky, and I am the founder of GastroChef.",
+        "text-2": "I am a Master of Sports of Ukraine in weightlifting, and I also was a member of the Ukrainian national team.",
+        "text-3": "I have a higher education at the National University of Physical Education and Sports of Ukraine (NUPESU), and in the past I was a professional fitness trainer!",
+        "text-4": "And I want to tell you more about GastroChef."
+    },
+    "Footer": {
+        "text-1": "Nutrition programs",
+        "text-2": "About us",
+        "text-3": "Business lunches",
+        "text-4": "Gastro Shop",
+        "text-5": "Blog",
+        "text-6": "Healthy ration",
+        "text-7": "Service of healthy nutrition",
+        "text-8": "Cooperation conditions"
+    },
+    "Blog": {
+        "text-1": "Details",
+        "text-2": "Close All",
+        "text-3": "More"
+    },
+    "BusinessMainItem": {
+        "text-1": "Business lunches",
+        "text-2": "Introducing a sweet collection of healthy candies. Made with love and produced from natural products without added sugar - with care for you and your loved ones!",
+        "text-3" : "Delivery cost is 60 UAH for pre-orders (1 day in advance). Pre-orders imply delivery the next day from 6:00-10:00. Minimum order - from 6 candies. Weight of 1 candy is 25 g.",
+        "text-4" : "'For tomorrow' orders are accepted until 11:00 of the current day.",
+        "text-5" : "Candies are delivered in transparent packages with a sticker. You can order a gift box with a ribbon for 20 UAH",
+        "text-6" : "Place an order"
     }
 }

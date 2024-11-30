@@ -1,8 +1,10 @@
 'use client';
 import Link from 'next/link';
 import React, { useState } from "react";
+import { useTranslation } from 'react-i18next';
 import "./blog.scss";
-const Page = () => {
+const Blog = () => {
+  const { t } = useTranslation();
   const [visibleItems, setVisibleItems] = useState(3);
   const items = [
     { id: 1, databaseId: "product1", title: "Как поменять свои пищевые привычки?", date: "29.05.2020", imgSrc: "/images/blog1.png" },
@@ -31,17 +33,21 @@ const Page = () => {
             <h3>{item.title}</h3>
             <p>{item.date}</p>
             <Link href={`./DetailsPageBlog/${item.databaseId}`}>
-              <button>Подробнее</button>
+              <button>{t("Blog.text-1")}</button>
             </Link>
           </div>
         ))}
       </div>
 
       <button onClick={loadMoreItems} className="load-more-button">
-        Еще
+        {visibleItems < items.length ? t("Blog.text-3") : <>
+          <div onClick={() => setVisibleItems(0)}>
+          {t("Blog.text-2")}
+          </div>
+        </>}
       </button>
     </div>
   );
 };
 
-export default Page;
+export default Blog;
