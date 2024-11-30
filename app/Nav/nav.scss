@@ -69,6 +69,11 @@
     z-index: 80;
     top: -40px;
 
+    .lang-active {
+      background-color: #64D370;
+      color: #F5FAFF;
+    }
+
     div {
       background-color: #F5FAFF;
       padding: 20px;
@@ -195,27 +200,36 @@
       margin-top: 40px;
     }
 
-    .lang-btn {
+    .lang-btn-mobile{
       padding: 10px 20px;
       background-color: white;
       color: #64D370;
       border-radius: 30px;
       border: none;
       font-weight: bold;
-      transition: background-color 0.3s;
+      transition: 0.1s linear;
+      &:active{
+        transform: scale(0.9);
+      }
+      &:hover{
+        transform: scale(0.9);
+      }
     }
-
-    .lang-btn:hover {
-      background-color: #64D370;
+    .lang-active-mobile{
       color: white;
-    }
-
-    .lang-btn.active {
+      padding: 10px 20px;
       background-color: #64D370;
-      color: white;
+      border-radius: 30px;
+      border: none;
+      font-weight: bold;
+      transition: 0.1s linear;
+      &:active{
+        transform: scale(0.9);
+      }
+      &:hover{
+        transform: scale(0.9);
+      }
     }
-
-
     .phone-number-mobile {
       background-color: white;
       padding: 20px;
@@ -225,6 +239,10 @@
       text-align: center;
       margin-top: 40px;
       font-size: 20px;
+      transition: 0.1s linear;
+      &:active{
+        transform: scale(0.9);
+      }
     }
 
     .mobile-media {

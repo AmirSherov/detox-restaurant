@@ -7,14 +7,14 @@ import LandingPageInfo from "./LandingItems/landing-page-info-section";
 import LandingIconItems from "./LandingItems/landing-icon-items/index.jsx";
 import FoodPhotos from "./LandingItems/FoodPhoto";
 import FAQ from "./LandingItems/FAQ";
-
+import { useTranslation } from 'react-i18next';
 
 export default function Home() {
   const [imgPath, setImgPath] = useState("/images/mask1.png");
   const [mainText, setMainText] = useState("Detox программа – вкусное очищение организма");
   const [secondText, setSecondText] = useState("8 бутылочек натуральных смузи и фрешей.");
-  const [sales, setSales] = useState("от 500 грн"); 
-
+  const [sales, setSales] = useState("от 500 грн");
+  const { t } = useTranslation();
   const slides = [
     {
       imgPath: "/images/mask1.png",
@@ -103,10 +103,10 @@ export default function Home() {
       <LandingIconItems />
       <section className="landing-buttons-section">
         <button>
-          Программа питания
+          {t("LandingPage.button-program")}
         </button>
         <button>
-          Специальные программы
+        {t("LandingPage.button-special")}
         </button>
       </section>
       <LandingPageInfo />

@@ -1,0 +1,34 @@
+{
+    "LandingPage": {
+        "button-program": "Тutrition program",
+        "button-special": "Special programs"
+    },
+    "Header": {
+        "nav-url-container-program": "Nutrition programs",
+        "nav-url-container-business": "Business lunches",
+        "nav-url-container-gastro": "Gastro Shop",
+        "nav-url-container-about": "About us",
+        "nav-url-container-blog": "Blog"
+    },
+    "AboutHistory": {
+        "text-1": "GastroChef's story began more than 6 years ago...",
+        "text-2": "For a long time, I noticed that people didn't have enough time for proper and healthy nutrition, just proper and simple regular nutrition.",
+        "text-3": "They could have breakfast, eat something like shawarma or snack for lunch, and in the evening, due to hunger, overeat, which negatively affected their metabolism and health.",
+        "text-4": "The desire to somehow change the situation and help people did not leave me alone, and I decided to open a delivery service for proper nutrition.",
+        "text-5": "With my 17-year experience in sports and professional education, together with a dietitian, we developed nutrition plans with calorie counting (KBJU).",
+        "text-6": "Get to know us! GastroChef team!"
+    },
+    "AboutEasy": {
+        "text-1": "«GastroChef - easy for busy people»",
+        "text-2": "GastroChef - proper nutrition with delivery to your home, created to make life easier, free up time from unnecessary snacks, fast food and give you the opportunity to feel light and full of energy, strength, for new achievements and victories.",
+        "text-3": "All products for preparing proper nutrition are purchased only with certificates, and diets are prepared on modern and safe kitchen equipment with delivery to you!",
+        "text-4": "Friends, if you have any questions, you can easily call us or write to me personally on Instagram or Facebook.",
+        "text-5": "Sincerely, Kirill Kobylinsky."
+    },
+    "AboutBegin":{
+        "text-1" : "Hello! My name is Kirill Kobylinsky, and I am the founder of GastroChef.",
+        "text-2" : "I am a Master of Sports of Ukraine in weightlifting, and I also was a member of the Ukrainian national team.",
+        "text-3" : "I have a higher education at the National University of Physical Education and Sports of Ukraine (NUPESU), and in the past I was a professional fitness trainer!",
+        "text-4" : "And I want to tell you more about GastroChef."
+    }
+}

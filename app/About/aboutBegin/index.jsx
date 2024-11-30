@@ -1,6 +1,7 @@
 import "./aboutBegin.scss";
-
+import { useTranslation } from "react-i18next";
 export default function AboutBegin() {
+    const { t } = useTranslation();
     return (
         <>
             <div className="aboutBegin-container">
@@ -14,18 +15,16 @@ export default function AboutBegin() {
                 </div>
                 <div className="landing-slider-text">
                     <div className="text-main">
-                        Здравствуйте! Меня зовут Кобылинский Кирилл, и я являюсь основателем GastroChef.
+                        {t("AboutBegin.text-1")}
                     </div>
                     <div className="second-text">
-                        Я Мастер Спорта Украины по тяжёлой атлетике, а так же состоял в составе сборной Украины.
+                        {t("AboutBegin.text-2")}
                     </div>
                     <div className="third-text">
-                        У меня высшее образование национального университета физического воспитания
-                        и спорта Украины (НФВСУ), а так же в
-                        прошлом я профессиональный фитнес тренер!
+                        {t("AboutBegin.text-3")}
                     </div>
                     <div className="fourht-text">
-                        И я хочу Вам рассказать побольше о GastroChef.
+                        {t("AboutBegin.text-4")}
                     </div>
                 </div>
                 <div className="landing-slider-images">

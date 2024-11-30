@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Nav from "./Nav/nav";
 import Footer from "./Footer";
+import "./i18next"
+import  I18nextProvider  from './i18next/I18nProvider';
 export const metadata: Metadata = {
   title: "Detox program",
   description: "Detox program",
@@ -24,9 +26,11 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body>
+      <I18nextProvider>
         <Nav />
         {children}
         <Footer />
+        </I18nextProvider>
       </body>
     </html>
   );
