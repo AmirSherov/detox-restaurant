@@ -58,10 +58,12 @@ const FormWithFAQ = () => {
           ))}
         </ul>
       </div>
-      {isOpen && <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} />}
-        {isSmallModalOpen&&
-        <SmallModal status={isSmallModalOpen} close={() => setIsSmallModalOpen(!isSmallModalOpen)}/>
+      <div className="modals-combo">
+        {isOpen && <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} />}
+        {isSmallModalOpen &&
+          <SmallModal status={isSmallModalOpen} close={() => setIsSmallModalOpen(!isSmallModalOpen)} />
         }
+      </div>
     </div>
   );
 };

@@ -12,7 +12,7 @@ function Modal({ isOpen, onClose }) {
           &times;
         </button>
         <h2 className="title-modal">Заполните все поля правильно</h2>
-        <form className="form-modal">
+        <div className="form-modal">
           <div className="left-side-modal">
             <label>
               <input type="text" placeholder="Иван" />
@@ -41,12 +41,12 @@ function Modal({ isOpen, onClose }) {
             </div>
             <div className="grid-container-3-modal">
               <label>
-                <input className="radios-modal" type="radio" />
-                Тест-день! Получить скидку -30%?
+                <input name="radio" className="radios-modal" type="radio" />
+                <p>Тест-день! Получить скидку -30%?</p>
               </label>
               <label>
-                <input className="radios-modal" type="radio" />
-                Согласен с условиями сотрудничества
+                <input name="radio" className="radios-modal" type="radio" />
+                <p>Согласен с условиями сотрудничества</p>
               </label>
             </div>
           </div>
@@ -54,41 +54,41 @@ function Modal({ isOpen, onClose }) {
             <div className="dropdown-modal">
               <button className="dropbtn-modal">Время доставки</button>
               <div className="dropdown-content-modal">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                <a>Link 1</a>
+                <a>Link 2</a>
+                <a>Link 3</a>
               </div>
             </div>
             <div className="dropdown-modal">
               <button className="dropbtn-modal">Количество дней заказа</button>
               <div className="dropdown-content-modal">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                <a>Link 1</a>
+                <a>Link 2</a>
+                <a>Link 3</a>
               </div>
             </div>
             <div className="dropdown-modal">
               <button className="dropbtn-modal">Способ оплаты </button>
               <div className="dropdown-content-modal">
-                <a href="#">Мне нужны приборы</a>
-                <a href="#">Да, нужны</a>
-                <a href="#">Нет, не нужно</a>
+                <a>Мне нужны приборы</a>
+                <a>Да, нужны</a>
+                <a>Нет, не нужно</a>
               </div>
             </div>
             <div className="dropdown-modal">
               <button className="dropbtn-modal">Пожелания</button>
               <div className="dropdown-content-modal">
-                <a href="#">Мне нужны приборы</a>
-                <a href="#">Да, нужны</a>
-                <a href="#">Нет, не нужно</a>
+                <a>Мне нужны приборы</a>
+                <a>Да, нужны</a>
+                <a>Нет, не нужно</a>
               </div>
             </div>
             <div className="dropdown-modal">
               <button className="dropbtn-modal">Как с Вами связаться?</button>
               <div className="dropdown-content-modal">
-                <a href="#">Мне нужны приборы</a>
-                <a href="#">Да, нужны</a>
-                <a href="#">Нет, не нужно</a>
+                <a>Мне нужны приборы</a>
+                <a>Да, нужны</a>
+                <a>Нет, не нужно</a>
               </div>
             </div>
 
@@ -96,7 +96,7 @@ function Modal({ isOpen, onClose }) {
           <button type="submit" className="submit-button-modal">
             Заказать
           </button>
-        </form>
+        </div>
       </div>
     </div>
   );
