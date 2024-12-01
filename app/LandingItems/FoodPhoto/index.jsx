@@ -10,12 +10,12 @@ export default function FoodPhoto() {
     ]
     return (
         <>
-            <div className={"galleryContainer"}>
-                <h2 className={"header-images"}>{t("FoodPhoto.text-1")}</h2>
-                <div className={"imageGrid"}>
+            <div className={"galleryContainer-food"}>
+                <h2 className={"header-images-food"}>{t("FoodPhoto.text-1")}</h2>
+                <div className={"imageGrid-food"}>
                     {images.map((src, index) => (
-                        <div key={index} className={"imageWrapper"}>
-                            <img src={src} alt={`Food ${index + 1}`} layout="responsive" width={300} height={200} />
+                        <div key={index} className={"imageWrapper-food"}>
+                            <img src={src} alt={`Food ${index + 1}`}  width={300}  />
                         </div>
                     ))}
                 </div>

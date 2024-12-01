@@ -8,7 +8,7 @@
   user-select: none;
   cursor: url("/images/cursor2.png");
 }
-.galleryContainer {
+.galleryContainer-food {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,14 +21,14 @@
       display: none;
     }
       justify-content: flex-start;
-      .header-images {
+      .header-images-food {
         font-size: 24px;
         font-weight: bold;
         margin-bottom: 20px;
         text-align: center;
       }
       
-      .imageGrid {
+      .imageGrid-food {
         display: flex;
         gap: 10px; 
         padding-bottom: 10px; 
@@ -50,10 +50,10 @@
         }
       }
       
-      .imageWrapper {
+      .imageWrapper-food {
         flex: 0 0 auto; 
         scroll-snap-align: center; 
-        width: 250px; 
+        width: 300px; 
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       }
