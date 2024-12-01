@@ -68,7 +68,6 @@ export default function Home() {
     setSecondText(slides[index].secondText);
     setSales(slides[index].sales);
   }
-  console.log(slides[0].imgPath)
   return (
     <div className="landing-page-container">
       <div className="slider default">

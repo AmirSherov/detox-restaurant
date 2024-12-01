@@ -35,7 +35,7 @@ export default function LandingSlider({
             </div>
             <div className="landing-slider-images">
                 <img className="ball" src="/images/left-side-ball.png" alt="" />
-                <img className="getting-img" src={`${imgPath}`} alt="" />
+                <img className="getting-img" src={`${imgPath}?v=${Date.now()}`}alt="" />
             </div>
         </div>
     );
