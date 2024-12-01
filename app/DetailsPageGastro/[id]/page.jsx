@@ -4,11 +4,11 @@ import './gastroDetails.scss';
 import { getProducts } from "../../geProductGastro/index.js";
 import { useParams } from 'next/navigation';
 import Header from "../../BusinesLunchs/BusinesMainItem/index.jsx"
-
+import { useTranslation } from "react-i18next";
 export default function GastroDetails() {
     const [product, setProduct] = useState(null);
     const { id } = useParams();
-
+    const { t } = useTranslation();
     useEffect(() => {
         if (!id) return;
 
@@ -42,13 +42,13 @@ export default function GastroDetails() {
                         <h3>{product.name}</h3>
                         <p>{product.description}</p>
                         <div className="product-details-gastro">
-                            <span>Белки: {product.proteins}</span>
-                            <span>Жиры: {product.fats}</span>
-                            <span>Углеводы: {product.carbs}</span>
-                            <span>{product.calories} ккал</span>
+                            <span>{t("DetailsPageGastro.text-1")} {product.proteins}</span>
+                            <span>{t("DetailsPageGastro.text-2")} {product.fats}</span>
+                            <span>{t("DetailsPageGastro.text-3")} {product.carbs}</span>
+                            <span>{product.calories} {t("DetailsPageGastro.text-4")}</span>
                         </div>
                         <div className="product-price-gastro">
-                            <span>{product.price} грн / 1 шт</span>
+                            <span>{product.price} {t("DetailsPageGastro.text-5")}</span>
                         </div>
                     </div>
                 ))}

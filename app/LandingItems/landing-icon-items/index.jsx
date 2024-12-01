@@ -1,31 +1,32 @@
 import React from "react";
 import "./landingIconItems.scss";
-
+import { useTranslation } from "react-i18next";
 const FeaturesComponent = () => {
+  const { t } = useTranslation();
   const features = [
     {
       image: "/images/eco.png",
-      text: "Бережём природу. Эко-тара и проборы.",
+      text: t("LandingPageIcons.text-1"),
     },
     {
       image: "/images/serving.png",
-      text: "28 дней без повторения, более 300 блюд!",
+      text: t("LandingPageIcons.text-2"),
     },
     {
       image: "/images/time.png",
-      text: "Бесплатно заменяем блюда и ингредиенты.",
+      text: t("LandingPageIcons.text-3"),
     },
     {
       image: "/images/night.png",
-      text: "Готовим ночью, упаковываем и отправляем Вам!",
+      text: t("LandingPageIcons.text-4"),
     },
     {
       image: "/images/deliver.png",
-      text: "Ежедневная удобная и бесплатная доставка с 6:00 до 10:00.",
+      text: t("LandingPageIcons.text-5"),
     },
     {
       image: "/images/time2.png",
-      text: "Сохраняем Вашу энергию и до 14 часов в неделю, освобождая от готовки!",
+      text: t("LandingPageIcons.text-6"),
     },
   ];
 

@@ -49,9 +49,163 @@
     "BusinessMainItem": {
         "text-1": "Business lunches",
         "text-2": "Introducing a sweet collection of healthy candies. Made with love and produced from natural products without added sugar - with care for you and your loved ones!",
-        "text-3" : "Delivery cost is 60 UAH for pre-orders (1 day in advance). Pre-orders imply delivery the next day from 6:00-10:00. Minimum order - from 6 candies. Weight of 1 candy is 25 g.",
-        "text-4" : "'For tomorrow' orders are accepted until 11:00 of the current day.",
-        "text-5" : "Candies are delivered in transparent packages with a sticker. You can order a gift box with a ribbon for 20 UAH",
-        "text-6" : "Place an order"
+        "text-3": "Delivery cost is 60 UAH for pre-orders (1 day in advance). Pre-orders imply delivery the next day from 6:00-10:00. Minimum order - from 6 candies. Weight of 1 candy is 25 g.",
+        "text-4": "'For tomorrow' orders are accepted until 11:00 of the current day.",
+        "text-5": "Candies are delivered in transparent packages with a sticker. You can order a gift box with a ribbon for 20 UAH",
+        "text-6": "Place an order"
+    },
+    "DetailsPageBlog": {
+        "text-1": "Back"
+    },
+    "DetailsPageGastro": {
+        "text-1": "Proteins: ",
+        "text-2": "Fats: ",
+        "text-3": "Carbohydrates: ",
+        "text-4": "Calories: ",
+        "text-5": "UAH / 1 pc: "
+    },
+    "GastroShop": {
+        "text-1": "Assortment"
+    },
+    "FAQ": {
+        "text-1": "How is the delivery of proper nutrition organized?",
+        "text-2": "Can I change the delivery time/place?",
+        "text-3": "How and in what form is the food delivered?",
+        "text-4": "When do you cook?",
+        "text-5": "What products do you use?",
+        "text-6": "Will I eat the same thing?",
+        "text-7": "I have an allergy and intolerance to certain products",
+        "text-8": "In what order is everything eaten?",
+        "text-9": "Can I freeze the program?",
+        "text-10": "Place an order",
+        "text-11": "Name",
+        "text-12": "Phone number",
+        "text-13": "Test day! Get a -30% discount?",
+        "text-14": "I agree with",
+        "text-15": "Cooperation conditions",
+        "text-16": "OR",
+        "text-17": "Online order",
+        "text-18": "Order by phone",
+        "text-19": "Frequently asked questions"
+    },
+    "FoodPhoto": {
+        "text-1": "Food photos"
+    },
+    "LandingPageInfoSection": {
+        "programs": {
+            "text-1": "EXPRESS FIT",
+            "text-2": "800 kcal",
+            "text-3": "SLIM",
+            "text-4": "1000 kcal",
+            "text-5": "FITNESS",
+            "text-6": "1300 kcal",
+            "text-7": "BALANCE",
+            "text-8": "1600 kcal",
+            "text-9": "BALANCE +",
+            "text-10": "1800 kcal",
+            "text-11": "STRONG",
+            "text-12": "2000 kcal",
+            "text-13": "MAXI FIT",
+            "text-14": "2400 kcal"
+        },
+        "schedule-left": {
+            "text-1": "FITNESS",
+            "text-2": "1300 kcal",
+            "text-3": "Healthy nutrition program Express Fit. Ideal for: weight loss in a short time, energy and strength increase, weight loss with sedentary lifestyle.",
+            "text-4": "Test day",
+            "text-5": "510 UAH",
+            "text-6": "347 UAH",
+            "text-7": "1 day",
+            "text-8": "510 UAH",
+            "text-9": "From 7 days",
+            "text-10": "510 UAH",
+            "text-11": "490 UAH",
+            "text-12": "From 14 days",
+            "text-13": "510 UAH",
+            "text-14": "445 UAH",
+            "text-15": "From 30 days",
+            "text-16": "510 UAH",
+            "text-17": "440 UAH",
+            "text-18": "Breakfast and dinner",
+            "text-19": "-15%",
+            "text-20": "443 UAH",
+            "text-21": "Order"
+        },
+        "schedule-right": {
+            "days": {
+                "text-1": "MON",
+                "text-2": "TUE",
+                "text-3": "WED",
+                "text-4": "THU",
+                "text-5": "FRI",
+                "text-6": "SAT",
+                "text-7": "SUN"
+            },
+            "items": {
+                "text-1": "Breakfast",
+                "text-2": "7.00 - 9.00",
+                "text-3": "- Frittata with cheese and zucchini",
+                "text-4": "170 UAH",
+                "text-5": "2nd Breakfast ",
+                "text-6": "10.00 - 12.00",
+                "text-7": "- Farmer's yogurt - Useful cookies from dried fruits and nuts ",
+                "text-8": "200 UAH \n 2 pieces",
+                "text-9": "Lunch",
+                "text-10": "13.00 - 15.00",
+                "text-11": " - Turkey kofta - Summer salad with olives and cheese",
+                "text-12": "100 gr \n 100 gr",
+                "text-13": "Snack",
+                "text-14": "16.00 - 18.00",
+                "text-15": "- Cottage cheese souffle with cocoa and nuts",
+                "text-16": "100 gr",
+                "text-17": "Dinner",
+                "text-18": "19.00 - 21.00",
+                "text-19": "   - Fish skewer with potatoes - Grilled vegetables",
+                "text-20": "200 gr \n 100 gr"
+            }
+        }
+    },
+    "LandingSlider": {
+        "text-1": "Order",
+        "text-2": "Trial day total: "
+    },
+    "LandingPageModal": {
+        "text-1": "Fill in all fields correctly",
+        "text-2": "Name",
+        "text-3": "Email",
+        "text-4": "Nutrition programs",
+        "text-5": "Special programs",
+        "text-6": "Street",
+        "text-7": "House:199",
+        "text-8": "Floor:99",
+        "text-9": "Apartment:99",
+        "text-10": "Entrance:199",
+        "text-11": "Intercom:199",
+        "text-12": "Test day! Get a -30% discount?",
+        "text-13": "I agree with the terms of cooperation",
+        "text-14": "Delivery time",
+        "text-15": "Number of days of order",
+        "text-16": "Payment method",
+        "text-17": "Wishes",
+        "text-18": "How to contact you?",
+        "text-19": "Order"
+    },
+    "LandingPageSmallModal": {
+        "text-1": "Order form",
+        "text-2": "Name",
+        "text-3": "Enter your name",
+        "text-4": "Phone number",
+        "text-5": "Enter your phone number",
+        "text-6": "I agree with",
+        "text-7": "Cooperation conditions",
+        "text-8": "Order"
+    },
+    "LandingPageIcons": {
+        "text-1": "We take care of nature. Eco packaging and containers.",
+        "text-2": "28 days without repetition, over 300 dishes!",
+        "text-3": "We replace dishes and ingredients for free.",
+        "text-4": "We cook at night, pack and send it to you!",
+        "text-5": "Daily convenient and free delivery from 6:00 to 10:00.",
+        "text-6": "We save your energy and up to 14 hours per week, freeing you from cooking!"
     }
 }

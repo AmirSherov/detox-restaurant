@@ -1,124 +1,120 @@
 import "./landingPageInfoSection.scss"
+import { useTranslation } from "react-i18next"
 export default function LandingPageInfoSection() {
+    const { t } = useTranslation();
     return (
         <>
             <div className="nutrition-program">
                 <div className="header-info">
                     <div className="programs">
-                        <div>EXPRESS FIT<br /><span>800 ккал</span></div>
-                        <div>SLIM<br />1000 ккал</div>
-                        <div className="active">FITNESS<br /><span>1300 ккал</span></div>
-                        <div>BALANCE<br /><span>1600 ккал</span></div>
-                        <div>BALANCE +<br /><span>1800 ккал</span></div>
-                        <div>STRONG<br /><span>2000 ккал</span></div>
-                        <div>MAXI FIT<br /><span>2400 ккал</span></div>
+                        <div>{t("LandingPageInfoSection.programs.text-1")}<br /><span>{t("LandingPageInfoSection.programs.text-2")}</span></div>
+                        <div>{t("LandingPageInfoSection.programs.text-3")}<br />{t("LandingPageInfoSection.programs.text-4")}</div>
+                        <div className="active">{t("LandingPageInfoSection.programs.text-5")}<br /><span>{t("LandingPageInfoSection.programs.text-6")}</span></div>
+                        <div>{t("LandingPageInfoSection.programs.text-7")}<br /><span>{t("LandingPageInfoSection.programs.text-8")}</span></div>
+                        <div>{t("LandingPageInfoSection.programs.text-9")}<br /><span>{t("LandingPageInfoSection.programs.text-10")}</span></div>
+                        <div>{t("LandingPageInfoSection.programs.text-11")}<br /><span>{t("LandingPageInfoSection.programs.text-12")}</span></div>
+                        <div>{t("LandingPageInfoSection.programs.text-13")}<br /><span>{t("LandingPageInfoSection.programs.text-14")}</span></div>
                     </div>
                 </div>
                 <div className="schedule-section">
                     <div className="schedule-left-side">
                         <div className="fitnes-info">
                             <div className="title">
-                                <h1>FITNESS</h1>
-                                <h3>1300 ккал</h3>
+                                <h1>{t("LandingPageInfoSection.schedule-left.text-1")}</h1>
+                                <h3>{t("LandingPageInfoSection.schedule-left.text-2")}</h3>
                             </div>
                             <div className="main-text">
-                                Программа здорового питания Express Fit. Идеально для: похудения в кратчайшие сроки, повышения энергии и сил, снижения веса при сидячем образе жизни.
+                            {t("LandingPageInfoSection.schedule-left.text-3")}
                             </div>
                         </div>
                         <div className="prices-section">
                             <div className="item-left-side">
-                                <div>Тестовый день</div>
-                                <div>510 грн</div>
-                                <div>347 грн</div>
+                                <div>{t("LandingPageInfoSection.schedule-left.text-4")}</div>
+                                <div>{t("LandingPageInfoSection.schedule-left.text-5")}</div>
+                                <div>{t("LandingPageInfoSection.schedule-left.text-6")}</div>
                             </div>
                             <div className="item-left-side">
-                                <div>1 день</div>
+                                <div>{t("LandingPageInfoSection.schedule-left.text-7")}</div>
                                 <div></div>
-                                <div>510 грн</div>
+                                <div>{t("LandingPageInfoSection.schedule-left.text-8")}</div>
                             </div>
                             <div className="item-left-side">
-                                <div>От 7 дней</div>
-                                <div>510грн</div>
-                                <div>490грн</div>
+                                <div>{t("LandingPageInfoSection.schedule-left.text-9")}</div>
+                                <div>{t("LandingPageInfoSection.schedule-left.text-10")}</div>
+                                <div>{t("LandingPageInfoSection.schedule-left.text-11")}</div>
                             </div>
                             <div className="item-left-side">
-                                <div>От 14 дней</div>
-                                <div>510грн</div>
-                                <div>445грн</div>
+                                <div>{t("LandingPageInfoSection.schedule-left.text-12")}</div>
+                                <div>{t("LandingPageInfoSection.schedule-left.text-13")}</div>
+                                <div>{t("LandingPageInfoSection.schedule-left.text-14")}</div>
                             </div>
                             <div className="item-left-side">
-                                <div>От 30 дней</div>
-                                <div>510грн</div>
-                                <div>445грн</div>
+                                <div>{t("LandingPageInfoSection.schedule-left.text-15")}</div>
+                                <div>{t("LandingPageInfoSection.schedule-left.text-16")}</div>
+                                <div>{t("LandingPageInfoSection.schedule-left.text-17")}</div>
                             </div>
                             <div className="item-left-side">
-                                <div>Завтрак и ужин</div>
-                                <div>-15%</div>
-                                <div>443грн</div>
+                                <div>{t("LandingPageInfoSection.schedule-left.text-18")}</div>
+                                <div>{t("LandingPageInfoSection.schedule-left.text-19")}</div>
+                                <div>{t("LandingPageInfoSection.schedule-left.text-20")}</div>
                             </div>
                         </div>
-                        <button className="schedule-button">Заказать</button>
+                        <button className="schedule-button">{t("LandingPageInfoSection.schedule-left.text-21")}</button>
                     </div>
                     <div className="schedule-right-side">
                         <div className="days">
-                            <div className="active">ПН</div>
-                            <div>ВТ</div>
-                            <div>СР</div>
-                            <div>ЧТ</div>
-                            <div>ПТ</div>
-                            <div>СБ</div>
-                            <div>ВС</div>
+                            <div className="active">{t("LandingPageInfoSection.schedule-right.days.text-1")}</div>
+                            <div>{t("LandingPageInfoSection.schedule-right.days.text-2")}</div>
+                            <div>{t("LandingPageInfoSection.schedule-right.days.text-3")}</div>
+                            <div>{t("LandingPageInfoSection.schedule-right.days.text-4")}</div>
+                            <div>{t("LandingPageInfoSection.schedule-right.days.text-5")}</div>
+                            <div>{t("LandingPageInfoSection.schedule-right.days.text-6")}</div>
+                            <div>{t("LandingPageInfoSection.schedule-right.days.text-7")}</div>
                         </div>
                         <div className="schedule">
                             <div className="items">
-                                <div>Завтрак <br /> <span>7.00 - 9.00</span></div>
+                                <div>{t("LandingPageInfoSection.schedule-right.items.text-1")}<br /> <span>{t("LandingPageInfoSection.schedule-right.items.text-2")}</span></div>
                                 <div>
-                                    - Фриттата с сыром и кабачками
+                                {t("LandingPageInfoSection.schedule-right.items.text-3")}
                                 </div>
                                 <div>
-                                    170гр
-                                </div>
-                            </div>
-                            <div className="items">
-                                <div> 2-й Завтрак <br /> <span>10.00 - 12.00</span></div>
-                                <div>
-                                - Фермерский йогурт
-                                - Полезное печенье из сухофруктов и орехов
-                                </div>
-                                <div>
-                                200гр
-                                2 шт
+                                {t("LandingPageInfoSection.schedule-right.items.text-4")}
                                 </div>
                             </div>
                             <div className="items">
-                                <div>Обед <br /> <span>13.00 - 15.00</span></div>
+                                <div> {t("LandingPageInfoSection.schedule-right.items.text-5")} <br /> <span>{t("LandingPageInfoSection.schedule-right.items.text-6")}</span></div>
                                 <div>
-                                - Люля-кебаб из индейки
-                                - Летний салат с маслинами и сыром
+                                {t("LandingPageInfoSection.schedule-right.items.text-7")}
                                 </div>
                                 <div>
-                                100гр
-                                100гр
+                                {t("LandingPageInfoSection.schedule-right.items.text-8")}
                                 </div>
                             </div>
                             <div className="items">
-                                <div>Полдник <br /> <span>16.00 - 17.30</span></div>
+                                <div>{t("LandingPageInfoSection.schedule-right.items.text-9")}<br /> <span>{t("LandingPageInfoSection.schedule-right.items.text-10")}</span></div>
                                 <div>
-                                - Творожное суфле с какао и вишей
+                                {t("LandingPageInfoSection.schedule-right.items.text-11")}
                                 </div>
                                 <div>
-                                100гр
+                                {t("LandingPageInfoSection.schedule-right.items.text-12")}
                                 </div>
                             </div>
                             <div className="items">
-                                <div>Ужин <br /> <span>19.00 - 20.00</span></div>
+                                <div>{t("LandingPageInfoSection.schedule-right.items.text-13")} <br /> <span>{t("LandingPageInfoSection.schedule-right.items.text-14")}</span></div>
                                 <div>
-                                - Рыбный терен
-                                - Овощи гриль
+                                {t("LandingPageInfoSection.schedule-right.items.text-15")}
                                 </div>
                                 <div>
-                                100гр
-                                150гр
+                                {t("LandingPageInfoSection.schedule-right.items.text-16")}
+                                </div>
+                            </div>
+                            <div className="items">
+                                <div>{t("LandingPageInfoSection.schedule-right.items.text-17")} <br /> <span>{t("LandingPageInfoSection.schedule-right.items.text-18")}</span></div>
+                                <div>
+                                {t("LandingPageInfoSection.schedule-right.items.text-19")}
+                                </div>
+                                <div>
+                                {t("LandingPageInfoSection.schedule-right.items.text-20")}
                                 </div>
                             </div>
                         </div>

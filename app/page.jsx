@@ -1,4 +1,3 @@
-
 'use client'
 import React, { useState } from "react";
 import LandingSlider from "./LandingItems/landing-slider";
@@ -75,7 +74,7 @@ export default function Home() {
       <div className="slider default">
         <div className="slider-content">
           <LandingSlider
-            imgPath={imgPath}
+            imgPath={`${imgPath}`}
             mainText={mainText}
             secondText={secondText}
             sales={sales}

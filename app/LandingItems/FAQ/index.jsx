@@ -3,52 +3,54 @@ import React from "react";
 import "./faq.scss";
 import Modal from "../Modal/index.jsx";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import SmallModal from "../smallModal/index.jsx";
 const FormWithFAQ = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useTranslation();
   const [isSmallModalOpen, setIsSmallModalOpen] = useState(false);
   const faqItems = [
-    "Как осуществляется доставка правильного питания?",
-    "Можно ли менять время доставки/место?",
-    "Как и в чем приезжает еда?",
-    "Когда Вы готовите?",
-    "Какие продукты Вы используете?",
-    "Я буду есть одно и то же?",
-    "У меня аллергия и непереносимость определенных продуктов",
-    "В какой очередности все есть?",
-    "Можно ли замораживать программу?",
+    t("FAQ.text-1"),
+    t("FAQ.text-2"),
+    t("FAQ.text-3"),
+    t("FAQ.text-4"),
+    t("FAQ.text-5"),
+    t("FAQ.text-6"),
+    t("FAQ.text-7"),
+    t("FAQ.text-8"),
+    t("FAQ.text-9")
   ];
 
   return (
     <div className="faq-container">
       <div className="form">
-        <h2>Оформить заказ</h2>
+        <h2>{t("FAQ.text-10")}</h2>
         <div className="inputGroup">
-          <label htmlFor="name">Имя</label>
+          <label htmlFor="name">{t("FAQ.text-11")}</label>
           <input id="name" type="text" placeholder="Иван" />
         </div>
         <div className="inputGroup error">
-          <label htmlFor="phone">Номер телефона</label>
+          <label htmlFor="phone">{t("FAQ.text-12")}</label>
           <input id="phone" type="text" placeholder="0972140632" />
         </div>
         <div className="checkboxGroup">
           <label>
             <input className="oportunity" type="checkbox" />
-            Тест-день! Получить скидку -30%?
+            {t("FAQ.text-13")}
           </label>
           <label>
             <input className="oportunity" type="checkbox" />
-            Согласен с <a href="#">условиями сотрудничества</a>
+            {t("FAQ.text-14")} <a href="#">{t("FAQ.text-15")}</a>
           </label>
         </div>
         <div className="buttonGroup">
-          <button onClick={() => setIsSmallModalOpen(!isSmallModalOpen)} className="primary">Заказ по телефону</button>
-          <span>ИЛИ</span>
-          <button onClick={() => setIsOpen(!isOpen)} className="secondary">Онлайн заказ</button>
+          <button onClick={() => setIsSmallModalOpen(!isSmallModalOpen)} className="primary">{t("FAQ.text-18")}</button>
+          <span>{t("FAQ.text-16")}</span>
+          <button onClick={() => setIsOpen(!isOpen)} className="secondary">{t("FAQ.text-17")}</button>
         </div>
       </div>
       <div className="faq">
-        <h2>Часто задаваемые вопросы</h2>
+        <h2>{t("FAQ.text-19")}</h2>
         <ul>
           {faqItems.map((item, index) => (
             <li key={index}>

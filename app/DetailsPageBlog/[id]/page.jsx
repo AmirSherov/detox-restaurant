@@ -3,10 +3,12 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
 import { getProducts } from "../../getProductBlog/index.js";
 import "./details.scss";
+import { useTranslation } from "react-i18next";
 import { useRouter } from "next/navigation";
 function DetailsPage() {
   const [product, setProduct] = useState(null); 
   const { id } = useParams();
+  const { t } = useTranslation();
   const router = useRouter();
   useEffect(() => {
     if (!id) return; 
@@ -45,7 +47,7 @@ function DetailsPage() {
       </div>
 
       <button onClick={() => router.push("/Blog")} className="back-button" >
-        Назад
+        {t("DetailsPageBlog.text-1")}
       </button>
     </div>
   );
